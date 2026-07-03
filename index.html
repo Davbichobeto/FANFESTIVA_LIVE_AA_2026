@@ -16,13 +16,11 @@
         .header-card { background: #000; padding: 15px; text-align: center; border-bottom: 2px solid #ff8c00; }
         .header-card h1 { color: #ff8c00; font-size: 18px; text-transform: uppercase; font-weight: 800; }
         
-        /* PÓSTER CONTROLADO PARA NO ABARCAR TODA LA PANTALLA */
         .posteri-img { width: 85%; max-height: 180px; object-fit: cover; object-position: top; display: block; margin: 8px auto; border: 2px solid #ff8c00; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .screen { display: none; } 
         .screen.active { display: block; }
         
-        /* BOTONES PRINCIPALES CON EFECTO 3D FÍSICO */
         .main-menu-btn { 
             display: block; 
             width: 90%; 
@@ -45,7 +43,6 @@
             box-shadow: 0 0 0 #8e9eab, 0 2px 3px rgba(0,0,0,0.5);
         }
 
-        /* CLASE ESPECIAL PARA LOS BOTONES TOTALMENTE NARANJAS (MAPA Y PDF) */
         .btn-naranja {
             background: linear-gradient(135deg, #ffb74d, #ff8c00) !important;
             border-color: #cc7000 !important;
@@ -56,22 +53,18 @@
             transform: translateY(4px) !important;
         }
         
-        /* DISEÑO ULTRA COMPACTO DE 2 COLUMNAS PARA DESPLIEGUE */
         .botones-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%; margin-top: 5px; }
         .area-btn { display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; min-height: 28px; padding: 5px 2px; border-radius: 5px; color: #fff; font-size: 9.5px; font-weight: bold; text-transform: uppercase; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,0.5); line-height: 1.1; letter-spacing: -0.2px; transition: transform 0.1s ease, filter 0.1s ease; }
         .area-btn:active { transform: scale(0.95); filter: brightness(0.8); }
         
-        /* FORMATO ORIGINAL DEL DIRECTORIO */
         .dir-item { background: #11141a; padding: 10px; margin: 0 10px 10px; border-left: 4px solid #ff8c00; display: flex; justify-content: space-between; align-items: center; }
         .dir-info strong { display: block; font-size: 11px; }
         .dir-info span { font-size: 9px; color: #8892b0; display: block; }
         .dir-zone { font-size: 9px; color: #ff8c00; background: #222; padding: 2px 5px; border-radius: 3px; border: 1px solid #ff8c00; display: inline-block; margin-top: 3px; }
         
-        /* BOTONES WHATSAPP 3D */
         .wa-btn { display: inline-block; background: #ff8c00; color: #000; padding: 5px 8px; border-radius: 4px; text-decoration: none; font-size: 10px; font-weight: 800; box-shadow: 0 2px 0 #cc7000; transition: all 0.1s; }
         .wa-btn:active { transform: translateY(2px); box-shadow: 0 0 0 #cc7000; }
         
-        /* BOTÓN DE RETROCESO 3D */
         .back-btn { display: block; width: 90%; margin: 10px auto; padding: 12px; background: #455e89; color: #fff; text-align: center; border-radius: 6px; text-decoration: none; font-weight: 800; font-size: 13px; box-shadow: 0 4px 0 #2a3c5a, 0 5px 10px rgba(0,0,0,0.5); transition: all 0.1s ease; }
         .back-btn:active { transform: translateY(4px); box-shadow: 0 0 0 #2a3c5a, 0 2px 3px rgba(0,0,0,0.5); }
 
@@ -79,13 +72,11 @@
         .details-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; color: #fff; }
         .details-table th, .details-table td { border: 1px solid #333; padding: 5px; text-align: center; }
 
-        /* TÍTULOS Y CABECERA COMPACTOS */
         .title-box { border: 2px solid #ff8c00; border-radius: 10px; padding: 10px 5px; text-align: center; margin-top: 5px; margin-bottom: 8px; background: rgba(255, 140, 0, 0.05); box-shadow: 0 4px 10px rgba(0,0,0,0.5); width: 95%; margin-left: auto; margin-right: auto; }
         .title-box h1 { color: #ff8c00; font-size: 21px; font-weight: 900; text-transform: uppercase; font-family: 'Arial Black', Impact, sans-serif; letter-spacing: 1px; margin-bottom: 6px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
         .info-line { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11px; margin-bottom: 3px; color: #e0e0e0; }
         .icon-svg { width: 14px; height: 14px; fill: #ff8c00; }
         
-        /* CUADRÍCULA PERFECTA Y COMPACTA DE ESTADÍSTICAS */
         .stats-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; padding: 5px 15px; margin-bottom: 5px; }
         .stat-card { background: #11141a; border: 1px solid #ff8c00; border-radius: 6px; padding: 6px 0; text-align: center; flex: 1 1 calc(33.33% - 8px); min-width: 28%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
         .stat-card.w25 { flex: 1 1 calc(25% - 8px); min-width: 22%; }
@@ -141,7 +132,6 @@
 <div id="directory-screen" class="screen">
     <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
     <div style="padding: 10px;">
-        <!-- Mando Operativo, Respuesta Táctica, Tecnología, Centro de Mando, K9, Apoyo Supervisión (Mantenidos) -->
         <div class="dir-item"><div class="dir-info"><strong>Juan Carlos Corona Ruíz</strong><span>Subinspector</span><div class="dir-zone">Zona: MANDO OPERATIVO</div></div><a href="https://wa.me/525611993622" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>Jhony Fredy Méndez Astudillo</strong><span>Inspector</span><div class="dir-zone">Zona: RESPUESTA TÁCTICA</div></div><a href="https://wa.me/528131220008" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>Benjamín López Rodríguez</strong><span>Subinspector</span><div class="dir-zone">Zona: TECNOLOGÍA</div></div><a href="https://wa.me/525618778909" class="wa-btn">WA</a></div>
@@ -151,34 +141,33 @@
         <div class="dir-item"><div class="dir-info"><strong>Victor Cerrano Contreras</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528125615345" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>Horacio Rangel Moreno</strong><span>Policía 2/o</span><div class="dir-zone">Zona: K-9</div></div><a href="https://wa.me/528117949301" class="wa-btn">WA</a></div>
         
-        <!-- Actualizados según tu listado -->
-        <div class="dir-item"><div class="dir-info"><strong>LUIS ANTONIO GRACIA SUAREZ</strong><span>APOYO A LA SUPERVISIÓN</span><div class="dir-zone">614 514 0975</div></div><a href="https://wa.me/526145140975" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>BERNAL SALAZAR JUAN OSCAR</strong><span>ACCESO 1 BICIS, CRISOL Y GRUA</span><div class="dir-zone">81 2011 5190</div></div><a href="https://wa.me/528120115190" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>BERNAL SALAZAR JUAN OSCAR</strong><span>ACCESO 1 BICIS, CRISOL</span><div class="dir-zone">81 2011 5190</div></div><a href="https://wa.me/528120115190" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>SUBOFICIAL ERICK MONTIEL CORTES</strong><span>ACCESO 7 GRUA</span><div class="dir-zone">81 1669 9149</div></div><a href="https://wa.me/528116699149" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>JUAN GABRIEL SANTA CRUZ RUIZ</strong><span>ACCESO 2 ARTISTAS VALLAS</span><div class="dir-zone">81 1817 1844</div></div><a href="https://wa.me/528118171844" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Galván Galindo Enrique</strong><span>ACCESO 3 VIP</span><div class="dir-zone">81 2342 4354</div></div><a href="https://wa.me/528123424354" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>AARON ERNAN TREJO GUERRERO</strong><span>ACCESO 3 VIP</span><div class="dir-zone">81 3178 9571</div></div><a href="https://wa.me/528131789571" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>CINDY HANNALY RODRÍGUEZ RODRÍGUEZ</strong><span>ACCESO 4 ADOLFO PRIETO</span><div class="dir-zone">81 2392 9960</div></div><a href="https://wa.me/528123929960" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Robles Valtierra Sofia Sacnicte</strong><span>ACCESO 5</span><div class="dir-zone">81 3089 7716</div></div><a href="https://wa.me/528130897716" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>ROBLES VALTIERRA SOFIA SACNICTE</strong><span>ACCESO 5</span><div class="dir-zone">81 3089 7716</div></div><a href="https://wa.me/528130897716" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>JOSÉ LUIS LLANOS MORALES</strong><span>VALLAS NORTE</span><div class="dir-zone">81 1627 5163</div></div><a href="https://wa.me/528116275163" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Jorge Alberto Carrillo Cardenas</strong><span>PREFERENTE PIT</span><div class="dir-zone">81 2466 6244</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Jenny Aurora Moran Rodríguez</strong><span>CHECK POINT PISTA DE HIELO</span><div class="dir-zone">81 1197 3526</div></div><a href="https://wa.me/528111973526" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>JORGE ALBERTO CARRILLO CARDENAS</strong><span>PREFERENTE PIT</span><div class="dir-zone">81 2466 6244</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>JENNY AURORA MORAN RODRÍGUEZ</strong><span>CHECK POINT PISTA DE HIELO</span><div class="dir-zone">81 1197 3526</div></div><a href="https://wa.me/528111973526" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>BRAYAN FRANCISCO LÓPEZ ROJAS</strong><span>CHECK POINT PISTA ACERO</span><div class="dir-zone">81 1372 6616</div></div><a href="https://wa.me/528113726616" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Set Israel González Esparza</strong><span>CHECK POINT LEWIS</span><div class="dir-zone">81 3859 0726</div></div><a href="https://wa.me/528138590726" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>JESÚS ARTURO AGUILAR EVIA</strong><span>CHECK POINT LEWIS</span><div class="dir-zone">81 4789 9950</div></div><a href="https://wa.me/528147899950" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>MALPICA REYES ALMA SARAI</strong><span>PANTALLA</span><div class="dir-zone">81 1570 3041</div></div><a href="https://wa.me/528115703041" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>HAROLD MENAHEM MARTÍNEZ MACIAS</strong><span>GENERALES FOOD AND SOUL & LIVE</span><div class="dir-zone">81 1124 4140</div></div><a href="https://wa.me/528111244140" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>HAROLD MENAHEM MARTÍNEZ MACIAS</strong><span>GENERALES LIVE</span><div class="dir-zone">81 1124 4140</div></div><a href="https://wa.me/528111244140" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>JUAN CARLOS DÍAZ JIMÉNEZ</strong><span>GENERALES FOOD AND SOUL</span><div class="dir-zone">55 1278 2989</div></div><a href="https://wa.me/525512782989" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>JAIME ORTIZ MACIAS</strong><span>VALLAS SUR</span><div class="dir-zone">81 3272 0687</div></div><a href="https://wa.me/528132720687" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>RICARDO MARTIN MÉNDEZ GÁMEZ</strong><span>ZONA A Y B, PLAZA SOPLADORES</span><div class="dir-zone">81 1640 6666</div></div><a href="https://wa.me/528116406666" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>REYES GONZALEZ GUILLERMO ALEJANDRO</strong><span>ZONA C Y D PARQUE</span><div class="dir-zone">81 1906 6256</div></div><a href="https://wa.me/528119066256" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Aaron Ernan Trejo Guerrero</strong><span>PASEO SANTA LUCIA</span><div class="dir-zone">81 3178 9571</div></div><a href="https://wa.me/528131789571" class="wa-btn">WA</a></div>
+        <div class="dir-item"><div class="dir-info"><strong>VICENTE DE LA CRUZ PUENTE</strong><span>PASEO SANTA LUCIA</span><div class="dir-zone">81 8179 3170</div></div><a href="https://wa.me/528181793170" class="wa-btn">WA</a></div>
         <div class="dir-item"><div class="dir-info"><strong>ONOFRE</strong><span>CRP 3, 5, 6, 7 Y ARENA</span><div class="dir-zone">81 1764 4832</div></div><a href="https://wa.me/528117644832" class="wa-btn">WA</a></div>
     </div>
-</div>>
+</div>
     
     <div id="deployment-screen" class="screen">
         <div style="padding: 10px;">
             <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
             
             <div class="botones-grid">
-                
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 5px; letter-spacing: 1px;">MANDO Y REACCIÓN</div>
                 
                 <a href="#" class="area-btn" style="background:#264653;" data-name="CENTRO DE MANDO" data-map="centro_de_mando.jpg" data-pdf="mando.pdf" data-mando="1" data-fc="8" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="9" data-mando-name="JUAN CARLOS CORONA RUÍZ" onclick="showDetail(this)">1. Centro Mando</a>
@@ -236,7 +225,7 @@
 
                 <a href="#" class="area-btn" style="background:#000000; grid-column: span 2; width: 50%; justify-self: center;" data-name="SECCIÓN K-9 (BINOMIOS)" data-map="k_9.jpg" data-pdf="k9.pdf" data-mando="0" data-fc="0" data-cadetes="3" data-gae="0" data-adminis="0" data-crp="0" data-k9="2" data-total="6" data-mando-name="HORACIO RANGEL (2 CANES)" onclick="showDetail(this)">34. Sección K-9</a>
 
-            </div>
+             </div>
         </div>
     </div>
     
@@ -276,7 +265,7 @@
             contenedorMensaje.innerText = mensaje;
             contenedorMensaje.style.display = 'block';
         } else {
-            contenedorMensaje.style.display = 'none';CC
+            contenedorMensaje.style.display = 'none';
         }
 
         document.getElementById('v-mando').innerText = el.getAttribute('data-mando') || "0";
