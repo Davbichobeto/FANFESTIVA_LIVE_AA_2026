@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta property="og:title" content="Operativo Fan Fest CMF26">
-    <meta property="og:description" content="DÍA VEINTICINCO FIFA FANFESTIVAL FC.">
+    <meta property="og:description" content="DÍA TREINTA Y CINCO CLAUSURA FIFA FANFESTIVAL FC.">
     <meta property="og:image" content="https://davbichobeto.github.io/dia_2_ff_cmf2026/posteri.jpg">
     <meta property="og:url" content="https://davbichobeto.github.io/dia_2_ff_cmf2026/">
     <meta property="og:type" content="website">
@@ -16,11 +16,13 @@
         .header-card { background: #000; padding: 15px; text-align: center; border-bottom: 2px solid #ff8c00; }
         .header-card h1 { color: #ff8c00; font-size: 18px; text-transform: uppercase; font-weight: 800; }
         
+        /* PÓSTER CONTROLADO PARA NO ABARCAR TODA LA PANTALLA */
         .posteri-img { width: 85%; max-height: 180px; object-fit: cover; object-position: top; display: block; margin: 8px auto; border: 2px solid #ff8c00; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .screen { display: none; } 
         .screen.active { display: block; }
         
+        /* BOTONES PRINCIPALES CON EFECTO 3D FÍSICO */
         .main-menu-btn { 
             display: block; 
             width: 90%; 
@@ -43,6 +45,7 @@
             box-shadow: 0 0 0 #8e9eab, 0 2px 3px rgba(0,0,0,0.5);
         }
 
+        /* CLASE ESPECIAL PARA LOS BOTONES TOTALMENTE NARANJAS (MAPA Y PDF) */
         .btn-naranja {
             background: linear-gradient(135deg, #ffb74d, #ff8c00) !important;
             border-color: #cc7000 !important;
@@ -53,18 +56,22 @@
             transform: translateY(4px) !important;
         }
         
+        /* DISEÑO ULTRA COMPACTO DE 2 COLUMNAS PARA DESPLIEGUE */
         .botones-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%; margin-top: 5px; }
         .area-btn { display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; min-height: 28px; padding: 5px 2px; border-radius: 5px; color: #fff; font-size: 9.5px; font-weight: bold; text-transform: uppercase; text-decoration: none; box-shadow: 0 1px 3px rgba(0,0,0,0.5); line-height: 1.1; letter-spacing: -0.2px; transition: transform 0.1s ease, filter 0.1s ease; }
         .area-btn:active { transform: scale(0.95); filter: brightness(0.8); }
         
+        /* FORMATO ORIGINAL DEL DIRECTORIO */
         .dir-item { background: #11141a; padding: 10px; margin: 0 10px 10px; border-left: 4px solid #ff8c00; display: flex; justify-content: space-between; align-items: center; }
         .dir-info strong { display: block; font-size: 11px; }
         .dir-info span { font-size: 9px; color: #8892b0; display: block; }
         .dir-zone { font-size: 9px; color: #ff8c00; background: #222; padding: 2px 5px; border-radius: 3px; border: 1px solid #ff8c00; display: inline-block; margin-top: 3px; }
         
+        /* BOTONES WHATSAPP 3D */
         .wa-btn { display: inline-block; background: #ff8c00; color: #000; padding: 5px 8px; border-radius: 4px; text-decoration: none; font-size: 10px; font-weight: 800; box-shadow: 0 2px 0 #cc7000; transition: all 0.1s; }
         .wa-btn:active { transform: translateY(2px); box-shadow: 0 0 0 #cc7000; }
         
+        /* BOTÓN DE RETROCESO 3D */
         .back-btn { display: block; width: 90%; margin: 10px auto; padding: 12px; background: #455e89; color: #fff; text-align: center; border-radius: 6px; text-decoration: none; font-weight: 800; font-size: 13px; box-shadow: 0 4px 0 #2a3c5a, 0 5px 10px rgba(0,0,0,0.5); transition: all 0.1s ease; }
         .back-btn:active { transform: translateY(4px); box-shadow: 0 0 0 #2a3c5a, 0 2px 3px rgba(0,0,0,0.5); }
 
@@ -72,11 +79,13 @@
         .details-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; color: #fff; }
         .details-table th, .details-table td { border: 1px solid #333; padding: 5px; text-align: center; }
 
+        /* TÍTULOS Y CABECERA COMPACTOS */
         .title-box { border: 2px solid #ff8c00; border-radius: 10px; padding: 10px 5px; text-align: center; margin-top: 5px; margin-bottom: 8px; background: rgba(255, 140, 0, 0.05); box-shadow: 0 4px 10px rgba(0,0,0,0.5); width: 95%; margin-left: auto; margin-right: auto; }
         .title-box h1 { color: #ff8c00; font-size: 21px; font-weight: 900; text-transform: uppercase; font-family: 'Arial Black', Impact, sans-serif; letter-spacing: 1px; margin-bottom: 6px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
         .info-line { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11px; margin-bottom: 3px; color: #e0e0e0; }
         .icon-svg { width: 14px; height: 14px; fill: #ff8c00; }
         
+        /* CUADRÍCULA PERFECTA Y COMPACTA DE ESTADÍSTICAS */
         .stats-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; padding: 5px 15px; margin-bottom: 5px; }
         .stat-card { background: #11141a; border: 1px solid #ff8c00; border-radius: 6px; padding: 6px 0; text-align: center; flex: 1 1 calc(33.33% - 8px); min-width: 28%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
         .stat-card.w25 { flex: 1 1 calc(25% - 8px); min-width: 22%; }
@@ -86,177 +95,162 @@
         .stat-card.total .s-val, .stat-card.total .s-lbl { color: #fff; }
     </style>
 </head>
-<body>
+<body ontouchstart="">
 <div class="container">
     
     <div id="home-screen" class="screen active">
        <div class="title-box">
-           <h1>FANFEST MONTERREY CMF26</h1>
-           <div style="background: #ff8c00; color: #000; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: 900; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.5);">DÍA VEINTICINCO</div>
-           <div class="info-line">
-               <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
-               05 de Julio 2026
-           </div>
-           <div class="info-line">
-               <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-               Parque Fundidora
-           </div>
-           <div class="info-line">
-               <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm4.5 10.5l-3.4 2.05.9 3.87-3-2.59-3 2.59.9-3.87-3.4-2.05 3.96-.34L12 7.5l1.54 3.64 3.96.34z"/></svg>
-               Mando: Juan Carlos Corona Ruíz
-           </div>
-           
-           <div class="info-line" style="color: #ffb74d; font-weight: 900; font-size: 14px; margin-top: 8px; text-align: center; border-top: 1px dashed rgba(255, 140, 0, 0.3); padding-top: 8px; line-height: 1.2;">
-               <svg class="icon-svg" style="width: 18px; height: 16px;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-               ZONAS ACTIVAS FOOD & SOUL, LIVE, PANTALLAS ESTADIO, PARQUE ACERO Y SOPLADORES
-           </div>
+            <h1>FANFEST MONTERREY CMF26</h1>
+            <div style="background: #ff8c00; color: #000; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: 900; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; box-shadow: 0 2px 4px rgba(0,0,0,0.5);">DÍA TREINTA Y CINCO CLAUSURA FANFEST</div>
+            <div class="info-line">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                19 de JULIO 2026
+            </div>
+            <div class="info-line">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                PARQUE FUNDIDORA
+            </div>
+            <div class="info-line">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm4.5 10.5l-3.4 2.05.9 3.87-3-2.59-3 2.59.9-3.87-3.4-2.05 3.96-.34L12 7.5l1.54 3.64 3.96.34z"/></svg>
+                MANDO: JUAN CARLOS CORONA RUIZ
+            </div>
+            
+            <div class="info-line" style="color: #ffb74d; font-weight: 900; font-size: 14px; margin-top: 8px; text-align: center; border-top: 1px dashed rgba(255, 140, 0, 0.3); padding-top: 8px; line-height: 1.2;">
+                <svg class="icon-svg" style="width: 18px; height: 18px;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                ZONAS ACTIVAS FOOD & SOUL, LIVE, EXPLANADA SOPLADORES Y ESCENARIO ESTADIO
+            </div>
        </div>
 
         <img src="posteri.jpg" alt="Póster" class="posteri-img" style="max-height: 140px;">
 
         <div class="stats-grid">
-            <div class="stat-card" style="background: #e76f51;"><span class="s-val">33</span><span class="s-lbl" style="color:#fff;">Mandos</span></div>
-            <div class="stat-card total"><span class="s-val">1785</span><span class="s-lbl">Total Elementos</span></div>
-            <div class="stat-card" style="background: #2a9d8f;"><span class="s-val">1402</span><span class="s-lbl" style="color:#fff;">Fuerza Civil</span></div>
+            <div class="stat-card" style="background: #e76f51;"><span class="s-val">32</span><span class="s-lbl" style="color:#fff;">MANDOS</span></div>
+			<div class="stat-card total"><span class="s-val">1833</span><span class="s-lbl">TOTAL ELEMENTOS</span></div>
+            <div class="stat-card" style="background: #2a9d8f;"><span class="s-val">1400</span><span class="s-lbl" style="color:#fff;">FUERZA CIVIL</span></div>
             
-            <div class="stat-card w25"><span class="s-val">250</span><span class="s-lbl">Cadetes</span></div>
+            <div class="stat-card w25"><span class="s-val">300</span><span class="s-lbl">Cadetes</span></div>
             <div class="stat-card w25"><span class="s-val">100</span><span class="s-lbl">GAE</span></div>
-            <div class="stat-card w25"><span class="s-val">77</span><span class="s-lbl">CRP´S</span></div>
-            <div class="stat-card w25"><span class="s-val">6</span><span class="s-lbl">MAMBAS</span></div>
+			<div class="stat-card w25"><span class="s-val">95</span><span class="s-lbl">CRPS</span></div>
+            <div class="stat-card w25"><span class="s-val">3</span><span class="s-lbl">K-9 (Canes)</span></div>
         </div>
 
         <a href="https://www.scribblemaps.com/maps/view/FANFEST/oXa3NCajWJ" target="_blank" class="main-menu-btn btn-naranja">Mapa Interactivo</a>
-        <a href="#" class="main-menu-btn" onclick="showScreen('directory-screen')">Directorio</a>
-        <a href="#" class="main-menu-btn" onclick="showScreen('deployment-screen')">Despliegue</a>
+        <a href="#" class="main-menu-btn" onclick="showScreen('directory-screen'); return false;">Directorio</a>
+        <a href="#" class="main-menu-btn" onclick="showScreen('deployment-screen'); return false;">Despliegue</a>
     </div>
 
-<div id="directory-screen" class="screen">
-    <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
-    <div style="padding: 10px;">
-        <div class="dir-item"><div class="dir-info"><strong>Juan Carlos Corona Ruíz</strong><span>Subinspector</span><div class="dir-zone">Zona: MANDO OPERATIVO</div></div><a href="https://wa.me/525611993622" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Jhony Fredy Méndez Astudillo</strong><span>Inspector</span><div class="dir-zone">Zona: RESPUESTA TÁCTICA</div></div><a href="https://wa.me/528131220008" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Benjamín López Rodríguez</strong><span>Subinspector</span><div class="dir-zone">Zona: TECNOLOGÍA</div></div><a href="https://wa.me/525618778909" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Luis Antonio García Suárez</strong><span>Oficial</span><div class="dir-zone">Zona: APOYO SUPERVISION</div></div><a href="https://wa.me/526145140975" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Jorge Pellegrin Lopez</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528138931115" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Mario Alberto Aparicio Cortes</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528135531205" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>David Alberto Lozano Cordova</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528132192621" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Victor Cerrano Contreras</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528125615345" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>Horacio Rangel Moreno</strong><span>Policía 2/o</span><div class="dir-zone">Zona: K-9</div></div><a href="https://wa.me/528117949301" class="wa-btn">WA</a></div>
-        
-        <div class="dir-item"><div class="dir-info"><strong>MARCO AURELIO CRUZ SANTIAGO</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 1 BICIS</div></div><a href="https://wa.me/528139943433" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JUAN GABRIEL SANTA CRUZ RUIZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 2 ARTISTAS VALLAS</div></div><a href="https://wa.me/528118171844" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>AARON ERNAN TREJO GUERRERO</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 3 VIP</div></div><a href="https://wa.me/528131789571" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>CINDY HANNALY RODRÍGUEZ RODRÍGUEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 4 ADOLFO PRIETO</div></div><a href="https://wa.me/528123929960" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ROBLES VALTIERRA SOFIA SACNICTE</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 5</div></div><a href="https://wa.me/528130897716" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>RAMON CASANOVA CARRANZA</strong><span>SUBOFICIAL</span><div class="dir-zone">ESTACIONAMIENTO 5</div></div><a href="https://wa.me/528211262955" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JUAN CARLOS DÍAZ JIMÉNEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ESTACIONAMIENTO 6</div></div><a href="https://wa.me/525512782989" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ERICK MONTIEL CORTES</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 7 GRUA</div></div><a href="https://wa.me/528116699149" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>DAVID ORLANDO QUIJAS LOPEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 9 CRISOL</div></div><a href="https://wa.me/528120748769" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JUAN FRANCISCO JAVIER ALVARADO HERNANEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO CINTERMEX</div></div><a href="https://wa.me/528110082946" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>GONZALEZ ESPARZA SET ISRAEL</strong><span>SUBOFICIAL</span><div class="dir-zone">ACCESO 10</div></div><a href="https://wa.me/528138590726" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JOSÉ LUIS LLANOS MORALES</strong><span>OFICIAL</span><div class="dir-zone">VALLAS NORTE</div></div><a href="https://wa.me/528116275163" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ISIS BERTA CAROLINA QUINTANA SAN MIGUEL</strong><span>INSPECTORA</span><div class="dir-zone">ANTIMOTIN ROJO</div></div><a href="https://wa.me/528118143721" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>COBRA JESUS HOMERO FONSECA</strong><span>INSPECTOR</span><div class="dir-zone">ANTIMOTIN VERDE</div></div><a href="https://wa.me/528122138219" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ODIN MARTIN YOSHIO ARREOLA</strong><span>SUBINSPECTOR</span><div class="dir-zone">ANTIMOTIN AMARILLO</div></div><a href="https://wa.me/528113292698" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>EMPERADOR CESAR MANUEL CEPEDA CORTES</strong><span>OFICIAL</span><div class="dir-zone">ANTIMOTIN NARANJA</div></div><a href="https://wa.me/528129294013" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>RAPTOR ISRAEL TORRES GONZALEZ</strong><span>OFICIAL</span><div class="dir-zone">ANTIMOTIN AZUL</div></div><a href="https://wa.me/528129398507" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JORGE ALBERTO CARRILLO CARDENAS</strong><span>OFICIAL</span><div class="dir-zone">PREFERENTE PIT</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JENNY AURORA MORAN RODRÍGUEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">CHECK POINT PISTA DE HIELO</div></div><a href="https://wa.me/528111973526" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>SANCHEZ CAMPOS FLOR MARINA</strong><span>OFICIAL</span><div class="dir-zone">CHECK POINT PISTA ACERO</div></div><a href="https://wa.me/528110636557" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JESÚS ARTURO AGUILAR EVIA</strong><span>SUBOFICIAL</span><div class="dir-zone">CHECK POINT LEWIS</div></div><a href="https://wa.me/528147899950" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>HUGO ISMAEL SÁNCHEZ HERNANDEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">PANTALLA</div></div><a href="https://wa.me/528145357951" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>HAROLD MENAHEM MARTÍNEZ MACIAS</strong><span>SUBOFICIAL</span><div class="dir-zone">GENERALES LIVE</div></div><a href="https://wa.me/528111244140" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ENRIQUE GALVAN GALINDO</strong><span>OFICIAL</span><div class="dir-zone">GENERALES FOOD AND SOUL</div></div><a href="https://wa.me/528123424354" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>JAIME ORTIZ MACIAS</strong><span>SUBOFICIAL</span><div class="dir-zone">VALLAS SUR</div></div><a href="https://wa.me/528132720687" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>RICARDO MARTIN MÉNDEZ GÁMEZ</strong><span>SUBOFICIAL</span><div class="dir-zone">ZONA A Y B, PLAZA SOPLADORES</div></div><a href="https://wa.me/528116406666" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>REYES GONZALEZ GUILLERMO ALEJANDRO</strong><span>SUBOFICIAL</span><div class="dir-zone">ZONA C Y D PARQUE</div></div><a href="https://wa.me/528119066256" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>VICENTE DE LA CRUZ PUENTE</strong><span>SUBINSPECTOR</span><div class="dir-zone">PASEO SANTA LUCIA</div></div><a href="https://wa.me/528181793170" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>RAMOS DE LA CRUZ LILIANA</strong><span>OFICIAL</span><div class="dir-zone">PARQUE ACERO</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>SAUL MARTINES FLORENTINO</strong><span>SUBINSPECTOR</span><div class="dir-zone">CONTROL ACCESO 6 ZIGZAG</div></div><a href="https://wa.me/528442781266" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>BERNAL SALAZAR JUAN OSCAR</strong><span>SUBINSPECTOR</span><div class="dir-zone">CAMINO CINTERMEX</div></div><a href="https://wa.me/528120115190" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>GARCIA RAMOS IRMA GUADALUPE</strong><span>OFICIAL</span><div class="dir-zone">HOTEL HOLLIDAY INN</div></div><a href="https://wa.me/528116012318" class="wa-btn">WA</a></div>
-        <div class="dir-item"><div class="dir-info"><strong>ONOFRE/ROBELIN/MALANDRO</strong><span>POL 2 - CRP 3, 5, 6, 7 Y ARENA</span><div class="dir-zone">8117644832</div></div><a href="https://wa.me/528117644832" class="wa-btn">WA</a></div>
+    <div id="directory-screen" class="screen">
+        <a href="#" class="back-btn" onclick="showScreen('home-screen'); return false;">Volver al Inicio</a>
+        <div style="padding: 10px;">
+            <div class="dir-item"><div class="dir-info"><strong>Juan Carlos Corona Ruíz</strong><span>Subinspector</span><div class="dir-zone">Zona: MANDO OPERATIVO</div></div><a href="https://wa.me/525611993622" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Jhony Fredy Méndez Astudillo</strong><span>Inspector</span><div class="dir-zone">Zona: RESPUESTA TÁCTICA</div></div><a href="https://wa.me/528131220008" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Benjamín López Rodríguez</strong><span>Subinspector</span><div class="dir-zone">Zona: TECNOLOGÍA</div></div><a href="https://wa.me/525618778909" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Jorge Pellegrin Lopez</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528138931115" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Mario Alberto Aparicio Cortes</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528135531205" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>David Alberto Lozano Cordova</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528132192621" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Victor Cerrano Contreras</strong><span>Policía 1/o</span><div class="dir-zone">Zona: CENTRO DE MANDO</div></div><a href="https://wa.me/528125615345" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Horacio Rangel Moreno</strong><span>Policía 2/o</span><div class="dir-zone">Zona: K-9</div></div><a href="https://wa.me/528117949301" class="wa-btn">WA</a></div>
+
+            <div class="dir-item"><div class="dir-info"><strong>Luis Antonio García Suárez</strong><span>Oficial</span><div class="dir-zone">Zona: APOYO SUPERVISIÓN</div></div><a href="https://wa.me/526145140975" class="wa-btn">WA</a></div>
+            <div class="dir-item"><div class="dir-info"><strong>Marco Aurelio Cruz Santiago</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 1 BICIS</div></div><a href="https://wa.me/528139943433" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Juan Gabriel Santa Cruz Ruiz</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 2 ARTISTAS VALLAS</div></div><a href="https://wa.me/528118171844" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Aaron Ernan Trejo Guerrero</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 3 VIP</div></div><a href="https://wa.me/528131789571" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Cindy Hannaly Rodríguez Rodríguez</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 4 ADOLFO PRIETO</div></div><a href="https://wa.me/528123929960" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Robles Valtierra Sofia Sacnicte</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 5</div></div><a href="https://wa.me/528130897716" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Brayan Francisco Lopez Rojas</strong><span>Suboficial</span><div class="dir-zone">Zona: ESTACIONAMIENTO 5</div></div><a href="https://wa.me/528113726616" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Juan Carlos Díaz Jiménez</strong><span>Suboficial</span><div class="dir-zone">Zona: ESTACIONAMIENTO 6</div></div><a href="https://wa.me/525512782989" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Erick Montiel Cortes</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 7 GRUA</div></div><a href="https://wa.me/528116699149" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>David Orlando Quijas Lopez</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 9 CRISOL</div></div><a href="https://wa.me/528120748769" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Irma Garcia Ramos</strong><span>Suboficial</span><div class="dir-zone">Zona: HOTEL HOLLIDAY INN</div></div><a href="https://wa.me/528117789869" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Gonzalez Esparza Set Israel</strong><span>Suboficial</span><div class="dir-zone">Zona: ACCESO 10</div></div><a href="https://wa.me/528138590726" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Bertha Carolina Quintana San Miguel</strong><span>Inspectora</span><div class="dir-zone">Zona: ANTIMOTIN ROJO</div></div><a href="https://wa.me/528118143721" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Alex Salomon Rueda Velazquez</strong><span>Pol 2/o</span><div class="dir-zone">Zona: ANTIMOTIN VERDE</div></div><a href="https://wa.me/528122138219" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Odin Martin Yoshio Arreola</strong><span>Subinspector</span><div class="dir-zone">Zona: ANTIMOTIN AMARILLO</div></div><a href="https://wa.me/528113292698" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Emperador Cesar Manuel Cepeda Cortes</strong><span>Oficial</span><div class="dir-zone">Zona: ANTIMOTIN NARANJA</div></div><a href="https://wa.me/528129294013" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Raptor Israel Torres Gonzalez</strong><span>Oficial</span><div class="dir-zone">Zona: ANTIMOTIN AZUL</div></div><a href="https://wa.me/528129398507" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Jorge Alberto Carrillo Cardenas</strong><span>Oficial</span><div class="dir-zone">Zona: ZONA VIP ESCENARIO</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Jenny Aurora Moran Rodríguez</strong><span>Suboficial</span><div class="dir-zone">Zona: CHECK POINT PISTA DE HIELO</div></div><a href="https://wa.me/528111973526" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Jesus David Degollado Rodriguez</strong><span>Suboficial</span><div class="dir-zone">Zona: CHECK POINT 	PISTA ACERO</div></div><a href="https://wa.me/528132175969" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Jesús Arturo Aguilar Evia</strong><span>Suboficial</span><div class="dir-zone">Zona: CHECK POINT LEWIS</div></div><a href="https://wa.me/528147899950" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Ramos De La Cruz Liliana</strong><span>Oficial</span><div class="dir-zone">Zona: GENERALES ESCENARIO</div></div><a href="https://wa.me/528124666244" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Harold Menahem Martínez Macias</strong><span>Suboficial</span><div class="dir-zone">Zona: GENERALES LIVE</div></div><a href="https://wa.me/528111244140" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Sanchez Campos Flor Marina</strong><span>Oficial</span><div class="dir-zone">Zona: GENERALES FOOD AND SOUL</div></div><a href="https://wa.me/528110636557" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>José Luis Llanos Morales</strong><span>Oficial</span><div class="dir-zone">Zona: VALLAS NORTE</div></div><a href="https://wa.me/528116275163" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Ramon Casanova Carranza</strong><span>Suboficial</span><div class="dir-zone">Zona: VALLAS SUR</div></div><a href="https://wa.me/528211262955" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Ricardo Martin Méndez Gámez</strong><span>Suboficial</span><div class="dir-zone">Zona: ZONA A Y B, PLAZA SOPLADORES</div></div><a href="https://wa.me/528116406666" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Reyes Gonzalez Guillermo Alejandro</strong><span>Suboficial</span><div class="dir-zone">Zona: ZONA C Y D PARQUE</div></div><a href="https://wa.me/528119066256" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Vicente De La Cruz Puente</strong><span>Subinspector</span><div class="dir-zone">Zona: PASEO SANTA LUCIA</div></div><a href="https://wa.me/528181793170" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Saul Martines Florentino</strong><span>Subinspector</span><div class="dir-zone">Zona: CONTROL ACCESO 6 ZIGZAG</div></div><a href="https://wa.me/528442781266" class="wa-btn">WA</a></div>
+			<div class="dir-item"><div class="dir-info"><strong>Bernal Salazar Juan Oscar</strong><span>Suboficial</span><div class="dir-zone">Zona: CAMINO CINTERMEX</div></div><a href="https://wa.me/528120115190" class="wa-btn">WA</a></div>
+        </div>
     </div>
-</div>
-    
+
     <div id="deployment-screen" class="screen">
         <div style="padding: 10px;">
-            <a href="#" class="back-btn" onclick="showScreen('home-screen')">Volver al Inicio</a>
+            <a href="#" class="back-btn" onclick="showScreen('home-screen'); return false;">Volver al Inicio</a>
             
             <div class="botones-grid">
+                
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 5px; letter-spacing: 1px;">MANDO Y REACCIÓN</div>
                 
-                <a href="#" class="area-btn" style="background:#264653;" data-name="CENTRO DE MANDO" data-map="centro_de_mando.jpg" data-pdf="mando.pdf" data-mando="1" data-fc="8" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="9" data-mando-name="JUAN CARLOS CORONA RUÍZ" onclick="showDetail(this)">1. Centro Mando</a>
-                <a href="#" class="area-btn" style="background:#1d3557;" data-name="APOYO EN SUPERVISIÓN" data-map="zonas_generales.1.jpg" data-pdf="supervision.pdf" data-mando="1" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="1" data-mando-name="LUIS ANTONIO GRACIA SUAREZ" onclick="showDetail(this)">2. Apoyo Superv.</a>
-                <a href="#" class="area-btn" style="background:#0091ad; grid-column: span 2; width: 50%; justify-self: center;" data-name="REACCIÓN" data-map="centro_de_mando.jpg" data-pdf="centro_de_mando.pdf" data-mando="1" data-fc="50" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="51" data-mando-name="JHONY FREDY MÉNDEZ ASTUDILLO" onclick="showDetail(this)">4. Reacción</a>
+                <a href="#" class="area-btn" style="background:#264653;" data-name="CENTRO DE MANDO" data-map="centro_de_mando.jpg" data-pdf="mando.pdf" data-mando="1" data-fc="8" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="9" data-mando-name="JUAN CARLOS CORONA RUÍZ" onclick="showDetail(this); return false;">1. Centro Mando</a>
+                <a href="#" class="area-btn" style="background:#1d3557;" data-name="APOYO EN SUPERVISIÓN" data-map="zonas_generales.1.jpg" data-pdf="supervision.pdf" data-mando="1" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="1" data-mando-name="LUIS ANTONIO GARCÍA SUÁREZ" onclick="showDetail(this); return false;">2. Apoyo Superv.</a>
+                <a href="#" class="area-btn" style="background:#0091ad; grid-column: span 2; width: 50%; justify-self: center;" data-name="REACCIÓN" data-map="centro_de_mando.jpg" data-pdf="centro_de_mando.pdf" data-mando="1" data-fc="50" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="51" data-mando-name="JHONY FREDY MÉNDEZ ASTUDILLO" onclick="showDetail(this); return false;">3. Reacción</a>
 
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">PERÍMETROS Y VALLAS</div>
 
-                <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="PERIMETRAL" data-map="periferia.jpg" data-pdf="centro_de_mando.pdf" data-mando="1" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="24" data-total="25" data-mando-name="ONOFRE" onclick="showDetail(this)">5. Perimetral</a>
-                <a href="#" class="area-btn" style="background:#723c70;" data-name="VALLAS NORTE" data-map="vallas_nte.jpg" data-pdf="vallas_norte.pdf" data-mando="1" data-fc="14" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="15" data-mando-name="JOSÉ LUIS LLANOS MORALES" onclick="showDetail(this)">6. Vallas Norte</a>
-                <a href="#" class="area-btn" style="background:#b7094c;" data-name="VALLAS SUR" data-map="vallas_sur.jpg" data-pdf="vallas_sur.pdf" data-mando="1" data-fc="11" data-cadetes="8" data-gae="0" data-adminis="0" data-crp="0" data-total="20" data-mando-name="JAIME ORTIZ MACIAS" onclick="showDetail(this)">7. Vallas Sur</a>
-                <a href="#" class="area-btn" style="background:#495057;" data-name="VALLAS CENTRO" data-map="vallas_centro.jpg" data-pdf="vallas_centro.pdf" data-mando="1" data-fc="9" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="10" data-mando-name="MONTAÑO MARTINEZ CANDELARIO" onclick="showDetail(this)">8. Vallas Centro</a>
-
+                <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="PERIMETRAL" data-map="periferia.jpg" data-pdf="centro_de_mando.pdf" data-mando="1" data-fc="25" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="26" data-mando-name="ONOFRE" onclick="showDetail(this); return false;">4. Perimetral</a>
+                <a href="#" class="area-btn" style="background:#723c70;" data-name="VALLAS NORTE" data-map="vallas_nte.jpg" data-pdf="vallas_norte.pdf" data-mando="1" data-fc="5" data-cadetes="15" data-gae="0" data-adminis="0" data-crp="0" data-total="21" data-mando-name="JOSÉ LUIS LLANOS MORALES" onclick="showDetail(this); return false;">5. Vallas Norte</a>
+                <a href="#" class="area-btn" style="background:#b7094c;" data-name="VALLAS SUR" data-map="vallas_sur.jpg" data-pdf="vallas_sur.pdf" data-mando="1" data-fc="8" data-cadetes="15" data-gae="0" data-adminis="8" data-crp="0" data-total="24" data-mando-name="JAIME ORTIZ MACIAS" onclick="showDetail(this); return false;">6. Vallas Sur</a>
+               
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">ACCESOS</div>
                 
-                <a href="#" class="area-btn" style="background:#4a4e69;" data-name="ACCESO 1 BICIS" data-map="acceso_1.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="1" data-fc="10" data-cadetes="7" data-gae="7" data-adminis="0" data-crp="0" data-total="25" data-mando-name="JUAN GABRIEL SANTA CRUZ RUIZ" onclick="showDetail(this)">9. Acc. 1 bicis</a>
-                <a href="#" class="area-btn" style="background:#4a4e69;" data-name="ACCESO 2 ARTISTAS" data-map="acceso_2.jpg" data-pdf="acceso_2_artistas.pdf" data-mando="1" data-fc="10" data-cadetes="7" data-gae="7" data-adminis="0" data-crp="0" data-total="25" data-mando-name="JUAN GABRIEL SANTA CRUZ RUIZ" onclick="showDetail(this)">10. Acc. 2 Artistas</a>
-                <a href="#" class="area-btn" style="background:#6b705c;" data-name="ACCESO 3 VIP" data-map="acceso_3.jpg" data-pdf="acceso_3_staff.pdf" data-mando="1" data-fc="4" data-cadetes="5" data-gae="10" data-adminis="0" data-crp="0" data-total="20" data-mando-name="AARON ERNAN TREJO GUERRERO" onclick="showDetail(this)">11. Acceso 3 VIP</a>
-                <a href="#" class="area-btn" style="background:#f4a261;" data-name="ACCESO 5 CERRADO" data-map="acceso_5.jpg" data-pdf="acceso_5.pdf" data-mando="1" data-fc="19" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="20" data-mando-name="JUAN CARLOS DÍAZ JIMÉNEZ" onclick="showDetail(this)">12. Acc. 5 Cerrado</a>
-                <a href="#" class="area-btn" style="background:#e07a5f;" data-name="ACCESO 6 ESTACIONAMIENTO" data-map="acceso_6.jpg" data-pdf="acceso_6.pdf" data-mando="1" data-fc="4" data-cadetes="0" data-gae="5" data-adminis="0" data-crp="0" data-total="10" data-mando-name="EN REVISIÓN" onclick="showDetail(this)">13. Acceso 6 Estac.</a>
-                <a href="#" class="area-btn" style="background:#d62828;" data-name="ACCESO 7 GRÚA" data-map="acceso_7.jpg" data-pdf="acceso_7.pdf" data-mando="1" data-fc="10" data-cadetes="9" data-gae="5" data-adminis="0" data-crp="0" data-total="25" data-mando-name="SET ISRAEL GONZÁLEZ ESPARZA" onclick="showDetail(this)">14. Acceso 7 Grúa</a>
-                <a href="#" class="area-btn" style="background:#a2d2ff; color:#000;" data-name="ACCESO 10 PABELLON" data-map="acceso_10.jpg" data-pdf="acceso_10.pdf" data-mando="1" data-fc="29" data-cadetes="5" data-gae="0" data-adminis="0" data-crp="0" data-total="35" data-mando-name="ALEJANDRA CRUZ DIEGO" onclick="showDetail(this)">15. Acceso 10 Pab.</a>
-                <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="CINTERMEX PUERTAS" data-map="cintermex.jpg" data-pdf="cintermex.pdf" data-mando="1" data-fc="14" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="15" data-mando-name="ADRIAN MORALES OLIVA" onclick="showDetail(this)">16. Cintermex Puertas</a>
-                <a href="#" class="area-btn" style="background:#e9c46a; color:#000; grid-column: span 2; width: 50%; justify-self: center;" data-name="ESTACIONAMIENTO 5" data-map="estacionamiento_5.jpg" data-pdf="estacionamiento_5.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="EN REVISIÓN" onclick="showDetail(this)">17. Estacionamiento 5</a>
+                <a href="#" class="area-btn" style="background:#4a4e69;" data-name="ACCESO 1 BICIS" data-map="acceso_1.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="1" data-fc="10" data-cadetes="7" data-gae="7" data-adminis="0" data-crp="0" data-total="25" data-mando-name="JUAN GABRIEL SANTA CRUZ RUIZ" onclick="showDetail(this); return false;">8. Acc. 1 bicis</a>
+				<a href="#" class="area-btn" style="background:#4a4e69;" data-name="ACCESO 2 ARTISTAS" data-map="vallas_arena.jpg" data-pdf="acceso_2_artistas.pdf" data-mando="1" data-fc="5" data-cadetes="5" data-total="11" data-mando-name="JUAN GABRIEL SANTA CRUZ RUIZ" onclick="showDetail(this); return false;">8. Acc. 2 Artistas</a>
+                <a href="#" class="area-btn" style="background:#6b705c;" data-name="ACCESO 3 VIP" data-map="acceso_3.jpg" data-pdf="acceso_3_staff.pdf" data-mando="1" data-fc="5" data-cadetes="5" data-total="11" data-mando-name="ROBLES VALTIERRA SOFIA SACNICTE" onclick="showDetail(this); return false;">9. Acceso 3 VIP</a>
+                <a href="#" class="area-btn" style="background:#f4a261;" data-name="ACCESO 5 CERRADO" data-map="acceso_5.jpg" data-pdf="acceso_5.pdf" data-mando="1" data-fc="5" data-cadetes="5" data-total="11" data-mando-name="ERLAN JAVIER TIJERINA GOVEA" onclick="showDetail(this); return false;">10. Acc. 5 Cerrado</a>
+                <a href="#" class="area-btn" style="background:#e9c46a; color:#000; grid-column: span 2; width: 50%; justify-self: center;" data-name="ESTACIONAMIENTO 5" data-map="estacionamiento_5.jpg" data-pdf="estacionamiento_5.pdf" data-mando="1" data-fc="10" data-cadetes="0" data-total="11" data-mando-name="TORRES GARZA JUAN JOSE" onclick="showDetail(this); return false;">14. Estacionamiento 5</a>
+                <a href="#" class="area-btn" style="background:#e07a5f;" data-name="ACCESO 6 ESTACIONAMIENTO" data-map="acceso_6.jpg" data-pdf="acceso_6.pdf" data-mando="1" data-fc="5" data-cadetes="5" data-total="11" data-mando-name="JUAN CARLOS DÍAZ JIMÉNEZ" onclick="showDetail(this); return false;">11. Acceso 6 Estac.</a>
+                <a href="#" class="area-btn" style="background:#d62828;" data-name="ACCESO 7 GRÚA" data-map="acceso_7.jpg" data-pdf="acceso_7.pdf" data-mando="1" data-fc="10" data-cadetes="9" data-gae="5" data-adminis="0" data-crp="0" data-total="25" data-mando-name="SET ISRAEL GONZÁLEZ ESPARZA" onclick="showDetail(this); return false;">13. Acceso 7 Grúa</a>
+				<a href="#" class="area-btn" style="background:#c97a09; grid-column: span 2; width: 50%; justify-self: center;" data-name="ACCESO 9 CRISOL" data-map="acceso_1.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="1" data-fc="8" data-cadetes="6" data-gae="0" data-adminis="0" data-crp="0" data-total="15" data-mando-name="JORGE ALBERTO CARRILLO CARDENAS" onclick="showDetail(this); return false;">14. Acceso 9 Crisol</a>
+				<a href="#" class="area-btn" style="background:#a2d2ff; color:#000;" data-name="ACCESO 10 PABELLON" data-map="acceso_10.jpg" data-pdf="acceso_10.pdf" data-mando="1" data-fc="15" data-cadetes="0" data-total="16" data-mando-name="ALEJANDRA CRUZ DIEGO" onclick="showDetail(this); return false;">12. Acceso 10 Pab.</a>
+                <a href="#" class="area-btn" style="background:#2a9d8f;" data-name="HOTEL HOLLIDAY INN" data-map="hotel.jpg" data-pdf="cintermex.pdf" data-mando="1" data-fc="6" data-cadetes="0" data-total="7" data-mando-name="ADRIAN MORALES OLIVA" onclick="showDetail(this); return false;">13. Hotel Holliday Inn</a>
                 
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">CHECK POINTS</div>
 
-                <a href="#" class="area-btn" style="background:#2e6f95;" data-name="CHECK POINT NAVE LEWIS" data-map="check_point_lewis.jpg" data-pdf="checkin_lewis.pdf" data-mando="1" data-fc="11" data-cadetes="7" data-gae="11" data-adminis="0" data-crp="0" data-total="30" data-mando-name="MALPICA REYES ALMA SARAI" onclick="showDetail(this)">18. CP Nave Lewis</a>
-                <a href="#" class="area-btn" style="background:#5c4d7d;" data-name="CHECK POINT ADOLFO PRIETO" data-map="acceso_4.jpg" data-pdf="checkin_adolfo.pdf" data-mando="1" data-fc="3" data-cadetes="3" data-gae="3" data-adminis="0" data-crp="0" data-total="10" data-mando-name="CINDY HANNALY RODRÍGUEZ RODRÍGUEZ" onclick="showDetail(this)">19. CP Adolfo P.</a>
-                <a href="#" class="area-btn" style="background:#455e89;" data-name="CHECK POINT PISTA - ACERO" data-map="check_point_pista.jpg" data-pdf="checkin_pista_acero.pdf" data-mando="1" data-fc="8" data-cadetes="7" data-gae="14" data-adminis="0" data-crp="0" data-total="30" data-mando-name="HUGO ISMAEL SÁNCHEZ" onclick="showDetail(this)">20. CP Pista Acero</a>
-                <a href="#" class="area-btn" style="background:#a01a58;" data-name="CHECK POINT HIELO" data-map="check_point_hielo.jpg" data-pdf="chekin_hielo.pdf" data-mando="1" data-fc="1" data-cadetes="5" data-gae="8" data-adminis="0" data-crp="0" data-total="15" data-mando-name="JENNY AURORA MORAN RODRÍGUEZ" onclick="showDetail(this)">21. CP Hielo</a>
-                
-                <a href="#" class="area-btn" style="background:#e07a5f; grid-column: span 2; width: 50%; justify-self: center;" data-name="PREFERENTE PIT" data-map="escenario_live.jpg" data-pdf="preferente_pit.pdf" data-mando="1" data-fc="8" data-cadetes="6" data-gae="0" data-adminis="0" data-crp="0" data-total="15" data-mando-name="JORGE ALBERTO CARRILLO CARDENAS" onclick="showDetail(this)">22. PREFERENTE PIT</a>
+                <a href="#" class="area-btn" style="background:#2e6f95;" data-name="CHECK POINT NAVE LEWIS" data-map="check_point_lewis.jpg" data-pdf="checkin_lewis.pdf" data-mando="1" data-fc="7" data-cadetes="14" data-total="30" data-mando-name="MALPICA REYES ALMA SARAI" onclick="showDetail(this); return false;">15. CP Nave Lewis</a>
+                <a href="#" class="area-btn" style="background:#5c4d7d;" data-name="CHECK POINT ADOLFO PRIETO" data-map="acceso_4.jpg" data-pdf="checkin_adolfo.pdf" data-mando="1" data-fc="5" data-cadetes="7" data-total="21" data-mando-name="CINDY HANNALY RODRÍGUEZ RODRÍGUEZ" onclick="showDetail(this); return false;">16. CP Adolfo P.</a>
+                <a href="#" class="area-btn" style="background:#455e89;" data-name="CHECK POINT PISTA - ACERO" data-map="check_point_pista.jpg" data-pdf="checkin_pista_acero.pdf" data-mando="1" data-fc="5" data-cadetes="10" data-total="26" data-mando-name="JESÚS DAVID DEGOLLADO RODRÍGUEZ" onclick="showDetail(this); return false;">17. CP Pista Acero</a>
+                <a href="#" class="area-btn" style="background:#a01a58;" data-name="CHECK POINT HIELO" data-map="check_point_hielo.jpg" data-pdf="chekin_hielo.pdf" data-mando="1" data-fc="5" data-cadetes="5" data-total="15" data-mando-name="VILLARREAL CRUZ DALIA BERENICE" onclick="showDetail(this); return false;">18. CP Hielo</a>
+                <a href="#" class="area-btn" style="background:#d90429; grid-column: span 2; width: 50%; justify-self: center;" data-name="VIP" data-map="zonas_escenario.jpg" data-pdf="vip.pdf" data-mando="1" data-fc="5" data-cadetes="10" data-gae="0" data-adminis="0" data-crp="0" data-total="16" data-mando-name="LILIANA RAMOS DE LA CRUZ" onclick="showDetail(this); return false;">19. V.I.P.</a>
 
                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">SECTORES Y GENERALES</div>
 
-                <a href="#" class="area-btn" style="background:#3a86c8;" data-name="PANTALLA ESTADIO" data-map="pantalla.jpg" data-pdf="pantalla.pdf" data-mando="1" data-fc="7" data-cadetes="7" data-gae="0" data-adminis="0" data-crp="0" data-total="15" data-mando-name="JESÚS ARTURO AGUILAR EVIA" onclick="showDetail(this)">23. Pantalla Escenario</a>
-                <a href="#" class="area-btn" style="background:#3d405b;" data-name="GRALES FOOD & SOUL / LIVE" data-map="zona_live.jpg" data-pdf="generales_live.pdf" data-mando="1" data-fc="17" data-cadetes="7" data-gae="0" data-adminis="0" data-crp="0" data-total="25" data-mando-name="HAROLD MENAHEM / BRAYAN LÓPEZ" onclick="showDetail(this)">24. Gral live</a>
-                <a href="#" class="area-btn" style="background:#3d405b;" data-name="GRALES FOOD & SOUL / LIVE" data-map="zonas_food.jpg" data-pdf="food_soul.pdf" data-mando="1" data-fc="17" data-cadetes="7" data-gae="0" data-adminis="0" data-crp="0" data-total="25" data-mando-name="HAROLD MENAHEM / BRAYAN LÓPEZ" onclick="showDetail(this)">25. Gral Food</a>
-                <a href="#" class="area-btn" style="background:#219ebc;" data-name="PARQUE ACERO" data-map="parque_acero.jpg" data-pdf="parque_acero.pdf" data-mando="1" data-fc="15" data-cadetes="5" data-gae="0" data-adminis="0" data-crp="0" data-total="21" data-mando-name="RAMOS DE LA CRUZ LILIANA" onclick="showDetail(this)">25. Parque Acero</a>
-                <a href="#" class="area-btn" style="background:#4a4e69;" data-name="SECTOR A-1 Y B-1" data-map="zonas_parque.jpg" data-pdf="seccion_a_b.pdf" data-mando="1" data-fc="20" data-cadetes="0" data-gae="5" data-adminis="0" data-crp="0" data-total="25" data-mando-name="RICARDO MARTIN MÉNDEZ GÁMEZ" onclick="showDetail(this)">26. Sector A-1 y B-1</a>
-                <a href="#" class="area-btn" style="background:#f4a261;" data-name="SECTOR C-2 Y D-2" data-map="zonas_parque.jpg" data-pdf="seccion_c_d.pdf" data-mando="1" data-fc="12" data-cadetes="4" data-gae="3" data-adminis="0" data-crp="0" data-total="20" data-mando-name="REYES GONZALEZ GUILLERMO ALEJANDRO" onclick="showDetail(this)">27. Sector C-2 y D-2</a>
-                <a href="#" class="area-btn" style="background:#264653;" data-name="PLAZA SOPLADORES" data-map="sopladores.jpg" data-pdf="seccion_a_b.pdf" data-mando="1" data-fc="14" data-cadetes="5" data-gae="5" data-adminis="0" data-crp="0" data-total="25" data-mando-name="RICARDO MARTIN MÉNDEZ GÁMEZ" onclick="showDetail(this)">28. Plaza Sopladores</a>
-                <a href="#" class="area-btn" style="background:#264653;" data-name="PASEO SANTA LUCIA" data-map="paseo_santa_lucia.jpg" data-pdf="santa_lucia.pdf" data-mando="1" data-fc="15" data-cadetes="4" data-gae="10" data-adminis="0" data-crp="0" data-total="30" data-mando-name="VICENTE DE LA CRUZ PUENTE" onclick="showDetail(this)">29. Paseo S. Lucia</a>
+                <a href="#" class="area-btn" style="background:#3a86c8;" data-name="GENERALES ESTADIO" data-map="zonas_escenario.jpg" data-pdf="generales_live.pdf" data-mando="1" data-fc="3" data-cadetes="17" data-gae="0" data-adminis="0" data-crp="0" data-total="21" data-mando-name="BRAYAN FRANCISCO LÓPEZ ROJAS" onclick="showDetail(this); return false;">20. Grales Escenario</a>
+                <a href="#" class="area-btn" style="background:#3d405b;" data-name="GRALES LIVE" data-map="zona_live.jpg" data-pdf="generales_live.pdf" data-mando="1" data-fc="17" data-cadetes="7" data-gae="0" data-adminis="0" data-crp="0" data-total="25" data-mando-name="HAROLD MENAHEM / BRAYAN LÓPEZ" onclick="showDetail(this); return false;">21. Gral live</a>
+                <a href="#" class="area-btn" style="background:#3d405b;" data-name="GRALES FOOD & SOUL" data-map="zonas_food.jpg" data-pdf="zonas_food.pdf" data-mando="1" data-fc="17" data-cadetes="7" data-gae="0" data-adminis="0" data-crp="0" data-total="25" data-mando-name="HAROLD MENAHEM / BRAYAN LÓPEZ" onclick="showDetail(this); return false;">22. Gral Food</a>
+                <a href="#" class="area-btn" style="background:#4a4e69;" data-name="SECTORES A Y B" data-map="zonas_parque.jpg" data-pdf="seccion_a_b.pdf" data-mando="1" data-fc="10" data-cadetes="25" data-gae="0" data-adminis="0" data-crp="0" data-total="36" data-mando-name="RICARDO MARTIN MÉNDEZ GÁMEZ" onclick="showDetail(this); return false;">22. Sectores A y B</a>
+                <a href="#" class="area-btn" style="background:#f4a261;" data-name="SECTORES C Y D" data-map="zonas_parque.jpg" data-pdf="seccion_c_d.pdf" data-mando="1" data-fc="4" data-cadetes="26" data-gae="0" data-adminis="0" data-crp="0" data-total="31" data-mando-name="GUILLERMO ALEJANDRO REYES GONZÁLEZ" onclick="showDetail(this); return false;">23. Sectores C y D</a>
+                <a href="#" class="area-btn" style="background:#264653;" data-name="PLAZA SOPLADORES" data-map="sopladores.jpg" data-pdf="seccion_a_b.pdf" data-mando="1" data-fc="5" data-cadetes="10" data-gae="0" data-adminis="0" data-crp="0" data-total="16" data-mando-name="RICARDO MARTIN MÉNDEZ GÁMEZ" onclick="showDetail(this); return false;">24. Plaza Sopladores</a>
+                <a href="#" class="area-btn" style="background:#264653;" data-name="PASEO SANTA LUCIA" data-map="paseo_santa_lucia.jpg" data-pdf="santa_lucia.pdf" data-mando="1" data-fc="4" data-cadetes="26" data-gae="0" data-adminis="0" data-crp="0" data-total="31" data-mando-name="VICENTE DE LA CRUZ PUENTE" onclick="showDetail(this); return false;">25. Paseo S. Lucia</a>
 
-                <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">ZONAS ANTIS Y DESPLIEGUE TÁCTICO</div>
-
-                <a href="#" class="area-btn" style="background:#5e548e;" data-name="ANTI FUNDIDORA" data-map="anti_fundidora.jpg" data-pdf="anti_fundidora.pdf" data-mando="1" data-fc="50" data-total="51" onclick="showDetail(this)">Anti Fundidora</a>
-                <a href="#" class="area-btn" style="background:#00FF00;" data-name="ANTI MADERO" data-map="anti_madero.jpg" data-pdf="anti_madero.pdf" data-mando="1" data-fc="50" data-total="51" onclick="showDetail(this)">Anti Madero</a>
-                <a href="#" class="area-btn" style="background:#000080;" data-name="ZIGZAG" data-map="zigzag.jpg" data-pdf="zigzag.pdf" data-mando="1" data-fc="100" data-total="101" onclick="showDetail(this)">Zigzag</a>
-                <a href="#" class="area-btn" style="background:#5e548e;" data-name="CAMINITO" data-map="caminito.jpg" data-pdf="caminito.pdf" data-mando="1" data-fc="100" data-total="101" onclick="showDetail(this)">Caminito</a>
-                <a href="#" class="area-btn" style="background:#FF0000; grid-column: span 2; width: 50%; justify-self: center;" data-name="PUENTES" data-map="puentes.jpg" data-pdf="puentes.pdf" data-mando="1" data-fc="30" data-total="31" onclick="showDetail(this)">Puentes</a>
+                 <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">ESPECIALIDADES</div>
                 
-                <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">TOLDOS FIJOS (APOYO)</div>
+				<a href="#" class="area-btn" style="background:#5e548e;" data-name="ANTI FUNDIDORA" data-map="anti_fundidora.jpg" data-pdf="anti_fundidora.pdf" data-mando="1" data-fc="50" data-total="51" onclick="showDetail(this); return false;">Anti Fundidora</a>
+                <a href="#" class="area-btn" style="background:#00FF00;" data-name="ANTI MADERO" data-map="anti_madero.jpg" data-pdf="anti_madero.pdf" data-mando="1" data-fc="50" data-total="51" onclick="showDetail(this); return false;">Anti Madero</a>
+                <a href="#" class="area-btn" style="background:#000080;" data-name="ZIGZAG" data-map="zigzag.jpg" data-pdf="zigzag.pdf" data-mando="1" data-fc="100" data-total="101" onclick="showDetail(this); return false;">Zigzag</a>
+                <a href="#" class="area-btn" style="background:#5e548e;" data-name="CAMINITO" data-map="caminito.jpg" data-pdf="caminito.pdf" data-mando="1" data-fc="100" data-total="101" onclick="showDetail(this); return false;">Caminito</a>
+                <a href="#" class="area-btn" style="background:#FF0000; grid-column: span 2; width: 50%; justify-self: center;" data-name="PUENTES" data-map="puentes.jpg" data-pdf="puentes.pdf" data-mando="1" data-fc="30" data-total="31" onclick="showDetail(this); return false;">Puentes</a>
+				<a href="#" class="area-btn" style="background:#a5a58d; color:#000;" data-name="TOLDOS DE APOYO" data-map="toldos_fc.jpg" data-pdf="chekin_lewis.pdf" data-mando="0" data-fc="2" data-cadetes="6" data-gae="0" data-adminis="2" data-crp="0" data-total="10" data-mando-name="MALPICA REYES ALMA SARAI" onclick="showDetail(this); return false;">26. Toldo Lewis</a>
+                <a href="#" class="area-btn" style="background:#000000; grid-column: span 2; width: 50%; justify-self: center;" data-name="SECCIÓN K-9 (BINOMIOS)" data-map="k_9.jpg" data-pdf="k9.pdf" data-mando="0" data-fc="0" data-cadetes="3" data-gae="0" data-adminis="0" data-crp="0" data-k9="2" data-total="6" data-mando-name="HORACIO RANGEL" onclick="showDetail(this); return false;">32. Sección K-9</a>
 
-                <a href="#" class="area-btn" style="background:#a5a58d; color:#000;" data-name="TOLDO LEWIS" data-map="toldos_fc.jpg" data-pdf="checkin_lewis.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="MALPICA REYES ALMA SARAI" onclick="showDetail(this)">30. Toldo Lewis</a>
-                <a href="#" class="area-btn" style="background:#1780a1;" data-name="TOLDO ACCESO LAGO" data-map="toldos_fc.jpg" data-pdf="check_pista_acero.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="JESÚS DAVID DEGOLLADO RODRÍGUEZ" onclick="showDetail(this)">31. Toldo Lago</a>
-                <a href="#" class="area-btn" style="background:#892b64;" data-name="TOLDO PISTA DE HIELO" data-map="toldos_fc.jpg" data-pdf="chekin_hielo.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="JENNY AURORA MORAN RODRÍGUEZ" onclick="showDetail(this)">32. Toldo Hielo</a>
-                <a href="#" class="area-btn" style="background:#3a86c8;" data-name="TOLDO CRISOL" data-map="toldos_fc.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="BERNAL SALAZAR JUAN OSCAR" onclick="showDetail(this)">33. Toldo Crisol</a>
-                <a href="#" class="area-btn" style="background:#723c70;" data-name="TOLDO BICICLETAS" data-map="toldos_fc.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="0" data-fc="0" data-cadetes="0" data-gae="0" data-adminis="0" data-crp="0" data-total="0" data-mando-name="BERNAL SALAZAR JUAN OSCAR" onclick="showDetail(this)">34. Toldo Bicicletas</a>
-                <a href="#" class="area-btn" style="background:#b7094c;" data-name="TOLDO ACCESO 7 GRUA" data-map="toldos_fc.jpg" data-pdf="toldos_cris_bici.pdf" data-mando="1" data-fc="10" data-cadetes="9" data-gae="5" data-adminis="0" data-crp="0" data-total="25" data-mando-name="BERNAL SALAZAR JUAN OSCAR" onclick="showDetail(this)">35. Toldo 7 Grua</a>
-
-                <div style="grid-column: span 2; background: #11141a; color: #ff8c00; padding: 4px; text-align: center; font-size: 9px; font-weight: 900; border: 1px solid #ff8c00; border-radius: 4px; margin-top: 8px; letter-spacing: 1px;">ESPECIALIDADES</div>
-
-                <a href="#" class="area-btn" style="background:#000000; grid-column: span 2; width: 50%; justify-self: center;" data-name="SECCIÓN K-9 (BINOMIOS)" data-map="k_9.jpg" data-pdf="k9.pdf" data-mando="0" data-fc="0" data-cadetes="3" data-gae="0" data-adminis="0" data-crp="0" data-k9="2" data-total="6" data-mando-name="HORACIO RANGEL (2 CANES)" onclick="showDetail(this)">34. Sección K-9</a>
-
-             </div>
+            </div>
         </div>
     </div>
     
     <div id="detail-screen" class="screen">
         <div class="detail-card">
-            <img id="zone-map" src="" style="width:100%; border-radius:5px; display:none; cursor:pointer;" onclick="window.open(this.src, '_blank')">
+            <img id="zone-map" style="width:100%; border-radius:5px; display:none; cursor:pointer;" onclick="window.open(this.src, '_blank')">
             <div id="zone-title" style="font-weight:bold; color:#ff8c00; margin-top:10px; text-transform:uppercase;"></div>
             
             <div id="v-mensaje" style="font-size:11px; color:#fff; margin-top:10px; margin-bottom:10px; padding:10px; background:#264653; border-radius:5px; border-left:4px solid #e76f51; display:none; text-align:left; font-weight:bold;"></div>
@@ -268,7 +262,7 @@
             
             <a id="btn-pdf" class="main-menu-btn btn-naranja" style="margin-top:15px; display:flex; justify-content:center; align-items:center; gap:10px;" href="" target="_blank">📄 Ver Personal PDF ↓</a>
             
-            <a href="#" class="back-btn" onclick="showScreen('deployment-screen')">Regresar a Zonas</a>
+            <a href="#" class="back-btn" onclick="showScreen('deployment-screen'); return false;">Regresar a Zonas</a>
         </div>
     </div>
 </div>
